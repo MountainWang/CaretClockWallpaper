@@ -98,47 +98,47 @@
                     <li id="settings-tab-time" data-tab="settings-time" title="Time Settings" class="active"><i class="i-time"></i></li>
                     <li id="settings-tab-date" data-tab="settings-date" title="Date Settings"><i class="i-date"></i></li>
                     <li id="settings-tab-color" data-tab="settings-color" title="Color Settings"><i class="i-color"></i></li>
-                    <li id="settings-tab-links" data-tab="settings-links" title="Style Settings"><i class="i-links"></i></li>
+<!--                    <li id="settings-tab-links" data-tab="settings-links" title="Style Settings"><i class="i-links"></i></li>-->
                     <li id="settings-tab-extra" data-tab="settings-extra" title="Extra Settings"><i class="i-config"></i></li>
-                    <li id="settings-tab-about" data-tab="settings-about" title="About CaretTab"><i class="i-about"></i></li>
+<!--                    <li id="settings-tab-about" data-tab="settings-about" title="About CaretTab"><i class="i-about"></i></li>-->
                 </ul>
             </aside>
             <!-- /////////////////////// Time /////////////////////// -->
             <article id="settings-time" class="settings-content active">
-                <h1>Time Settings</h1>
+                <h1>时间设置</h1>
                 <div class="setting" id="setting-clock1">
-                    <h3>Display Primary Clock</h3>
-                    <small>Toggle the primary clock display on/off.</small>
+                    <h3>显示主时钟</h3>
+                    <small>切换主时钟的显示开关</small>
                     <div class="toggle">
                         <input id="set-clock1" class="switch" type="checkbox">
                         <label for="set-clock1"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                 </div>
                 <div class="setting" id="setting-seconds">
-                    <h3>Display Seconds</h3>
-                    <small>If enabled, displays the seconds on the primary time (applies only to the 'primary clock').</small>
+                    <h3>显示秒钟</h3>
+                    <small>如果设置为'开'，在主时钟显示当前秒数（只在主时钟生效）</small>
                     <div class="toggle">
                         <input id="set-seconds" class="switch" type="checkbox">
                         <label for="set-seconds"></label>
-                        <div class="toggle-off">OFF <small>(12:30)</small></div>
-                        <div class="toggle-on">ON <small>(12:30:40)</small></div>
+                        <div class="toggle-off">关 <small>(12:30)</small></div>
+                        <div class="toggle-on">开 <small>(12:30:40)</small></div>
                     </div>
                 </div>
                 <div class="setting" id="setting-meridiem">
-                    <h3>Display Meridiem</h3>
-                    <small>Toggle the meridiem (am/pm) on/off (only applies to the 'primary clock' and if set to 12 hour format).</small>
+                    <h3>显示上下午</h3>
+                    <small>切换 am/pm 显示的开关(只在十二小时制的主时钟生效)</small>
                     <div class="toggle">
                         <input id="set-meridiem" class="switch" type="checkbox">
                         <label for="set-meridiem"></label>
-                        <div class="toggle-off">OFF <small>(12:30)</small></div>
-                        <div class="toggle-on">ON <small>(12:30 AM)</small></div>
+                        <div class="toggle-off">关 <small>(12:30)</small></div>
+                        <div class="toggle-on">开 <small>(12:30 AM)</small></div>
                     </div>
                 </div>
                 <div class="setting" id="setting-military">
-                    <h3>24 Hour Clock</h3>
-                    <small>If enabled, displays all clocks in a 24 hour format, i.e. military time (the meridiem will be hidden if this is enabled).</small>
+                    <h3>24/12小时制切换</h3>
+                    <small>&nbsp;</small>
                     <div class="toggle">
                         <input id="set-military" class="switch" type="checkbox">
                         <label for="set-military"></label>
@@ -147,35 +147,35 @@
                     </div>
                 </div>
                 <div class="setting" id="setting-delimiter">
-                    <h3>Display Delimiter</h3>
-                    <small>Toggle the delimiter (:) in all clocks on/off.</small>
+                    <h3>显示冒号</h3>
+                    <small>设置所有时钟是否显示冒号</small>
                     <div class="toggle">
                         <input id="set-delimiter" class="switch" type="checkbox">
                         <label for="set-delimiter"></label>
-                        <div class="toggle-off">OFF <small>(12 30 40)</small></div>
-                        <div class="toggle-on">ON <small>(12:30:40)</small></div>
+                        <div class="toggle-off">关 <small>(12 30 40)</small></div>
+                        <div class="toggle-on">开 <small>(12:30:40)</small></div>
                     </div>
                 </div>
                 <div class="setting" id="setting-blinking">
-                    <h3>Blink Delimiter</h3>
-                    <small>Toggle the blinking of the delimiter (:) in the time (only applies to the 'primary clock').</small>
+                    <h3>闪烁冒号</h3>
+                    <small>设置冒号是否闪烁（只在主时钟生效）</small>
                     <div class="toggle">
                         <input id="set-blinking" class="switch" type="checkbox">
                         <label for="set-blinking"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                 </div>
                 <div class="setting" id="setting-time2">
-                    <h3>Enable 2nd Clock</h3>
-                    <small>If enabled, displays an additional clock that can be used to display time in other timezones.</small>
+                    <h3>开启第二个时钟</h3>
+                    <small>开启后添加一个时钟以显示其他时区的时间</small>
                     <div class="toggle">
                         <input id="set-time2" class="switch" type="checkbox">
                         <label for="set-time2"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
-                    <label for="set-time2-zone">Timezone*</label>
+                    <label for="set-time2-zone">时区*</label>
                     <select name="set-time2-zone" id="set-time2-zone">
                         <option value="Pacific/Midway">(GMT -11:00) Midway Island, Samoa</option>
                         <option value="Pacific/Honolulu">(GMT -10:00) Hawaii</option>
@@ -208,19 +208,19 @@
                         <option value="Asia/Magadan">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
                         <option value="Pacific/Auckland">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>-->
                     </select>
-                    <label for="set-time2-label">Clock Label</label>
+                    <label for="set-time2-label">标签</label>
                     <input type="text" id="set-time2-label">
                 </div>
                 <div class="setting" id="setting-time3">
-                    <h3>Enable 3rd Clock</h3>
-                    <small>If enabled, displays an additional clock that can be used to display time in other timezones.</small>
+                    <h3>开启第三个时钟</h3>
+                    <small>开启后添加一个时钟以显示其他时区的时间</small>
                     <div class="toggle">
                         <input id="set-time3" class="switch" type="checkbox">
                         <label for="set-time3"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
-                    <label for="set-time3-zone">Timezone*</label>
+                    <label for="set-time3-zone">时区*</label>
                     <select name="set-time3-zone" id="set-time3-zone">
                         <option value="Pacific/Midway">(GMT -11:00) Midway Island, Samoa</option>
                         <option value="Pacific/Honolulu">(GMT -10:00) Hawaii</option>
@@ -253,19 +253,19 @@
                         <option value="Asia/Magadan">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
                         <option value="Pacific/Auckland">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>-->
                     </select>
-                    <label for="set-time3-label">Clock Label</label>
+                    <label for="set-time3-label">标签</label>
                     <input type="text" id="set-time3-label">
                 </div>
                 <div class="setting" id="setting-time4">
-                    <h3>Enable 4th Clock</h3>
-                    <small>If enabled, displays an additional clock that can be used to display time in other timezones.</small>
+                    <h3>开启第四个时钟</h3>
+                    <small>开启后添加一个时钟以显示其他时区的时间</small>
                     <div class="toggle">
                         <input id="set-time4" class="switch" type="checkbox">
                         <label for="set-time4"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
-                    <label for="set-time4-zone">Timezone*</label>
+                    <label for="set-time4-zone">时区*</label>
                     <select name="set-time4-zone" id="set-time4-zone">
                         <option value="Pacific/Midway">(GMT -11:00) Midway Island, Samoa</option>
                         <option value="Pacific/Honolulu">(GMT -10:00) Hawaii</option>
@@ -298,91 +298,91 @@
                         <option value="Asia/Magadan">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
                         <option value="Pacific/Auckland">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>-->
                     </select>
-                    <label for="set-time4-label">Clock Label</label>
+                    <label for="set-time4-label">标签</label>
                     <input type="text" id="set-time4-label">
                 </div>
-                <p><small>*Note that display of the primary clock and additional clocks is based on the timezone your computer is set to. The detection of your current timezone is pretty much an educated guess and may not reflect your actual timezone, thus causing the additional clocks time to be off. Currently CaretTab is detecting your current timezone to be: "<span class="current-timezone"></span>"</small></p>
+                <!-- <p><small>*Note that display of the primary clock and additional clocks is based on the timezone your computer is set to. The detection of your current timezone is pretty much an educated guess and may not reflect your actual timezone, thus causing the additional clocks time to be off. Currently CaretTab is detecting your current timezone to be: "<span class="current-timezone"></span>"</small></p> -->
             </article>
             <!-- /////////////////////// Date /////////////////////// -->
             <article id="settings-date" class="settings-content">
-                <h1>Date Settings</h1>
+                <h1>日期设置</h1>
                 <div class="setting" id="setting-date">
-                    <h3>Display Date</h3>
-                    <small>Toggle the date display on/off.</small>
+                    <h3>显示日期</h3>
+                    <small>切换是否显示日期</small>
                     <div class="toggle">
                         <input id="set-date" class="switch" type="checkbox">
                         <label for="set-date"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                 </div>
                 <div class="setting" id="setting-day">
-                    <h3>Display Day</h3>
-                    <small>Toggle the day of the week on/off (only applies if 'short form' is off).</small>
+                    <h3>显示星期</h3>
+                    <small>设置是否显示星期几 (只在短日期设置为关时生效).</small>
                     <div class="toggle">
                         <input id="set-day" class="switch" type="checkbox">
                         <label for="set-day"></label>
-                        <div class="toggle-off">OFF <small>(January 31, 2000)</small></div>
-                        <div class="toggle-on">ON <small>(Saturday, January 31, 2000)</small></div>
+                        <div class="toggle-off">关 <small>(一月 31, 2000)</small></div>
+                        <div class="toggle-on">开 <small>(星期六, 一月 31, 2000)</small></div>
                     </div>
                 </div>
                 <div class="setting" id="setting-year">
-                    <h3>Display Year</h3>
-                    <small>Toggle display of the year on/off.</small>
+                    <h3>显示年份</h3>
+                    <small>设置是否显示年份</small>
                     <div class="toggle">
                         <input id="set-year" class="switch" type="checkbox">
                         <label for="set-year"></label>
-                        <div class="toggle-off">OFF <small>(January 31)</small></div>
-                        <div class="toggle-on">ON <small>(January 31, 2000)</small></div>
+                        <div class="toggle-off">关 <small>(一月 31)</small></div>
+                        <div class="toggle-on">开 <small>(一月 31, 2000)</small></div>
                     </div>
                 </div>
                 <div class="setting" id="setting-shortdate">
-                    <h3>Short Form</h3>
-                    <small>If enabled, displays the date in a short format.</small>
+                    <h3>短日期</h3>
+                    <small>设置为开时以简短的格式显示日期</small>
                     <div class="toggle">
                         <input id="set-shortdate" class="switch" type="checkbox">
                         <label for="set-shortdate"></label>
-                        <div class="toggle-off">OFF <small>(Saturday, January 31, 2000)</small></div>
-                        <div class="toggle-on">ON <small>(01/31/2016)</small></div>
+                        <div class="toggle-off">关 <small>(星期六, 一月 31, 2000)</small></div>
+                        <div class="toggle-on">开 <small>(01/31/2016)</small></div>
                     </div>
                 </div>
                 <div class="setting" id="setting-dateformat">
-                    <h3>Date Format</h3>
-                    <small>If enabled, displays the date in the format used by the United States.</small>
+                    <h3>日期格式</h3>
+                    <small>选择合适的日期格式</small>
                     <div class="radio-switch" title="Toggle time display">
                         <input id="middle" value="middle" class="radio" type="radio" name="set-dateformat">
                         <label for="middle"></label>
-                        <div class="radio-label">January 31, 2000 <small>(01/31/00)</small></div>
+                        <div class="radio-label">一月 31, 2000 <small>(01/31/00)</small></div>
                     </div>
                     <div class="radio-switch" title="Toggle time display">
                         <input id="little" value="little" class="radio" type="radio" name="set-dateformat">
                         <label for="little"></label>
-                        <div class="radio-label">31 January 2000 <small>(31/01/00)</small></div>
+                        <div class="radio-label">31 一月 2000 <small>(31/01/00)</small></div>
                     </div>
                     <div class="radio-switch" title="Toggle time display">
                         <input id="big" value="big" class="radio" type="radio" name="set-dateformat">
                         <label for="big"></label>
-                        <div class="radio-label">2000 January 31 <small>(00/01/31)</small></div>
+                        <div class="radio-label">2000 一月 31 <small>(00/01/31)</small></div>
                     </div>
                 </div>
 
             </article>
             <!-- /////////////////////// Color /////////////////////// -->
             <article id="settings-color" class="settings-content">
-                <h1>Colors</h1>
+                <h1>主题</h1>
                 <div class="setting" id="setting-background">
-                    <h3>Set custom background color</h3>
-                    <small>Click in the text box below and type in a color code in HEX, or use the popup controls to choose a color.</small>
+                    <h3>自定义背景颜色</h3>
+                    <small>在输入框中输入十六进制颜色代码或使用弹出的颜色选择器选择一个颜色</small>
                     <input type="text" id="set-background" value="#FFFFFF" class="jscolor" data-jscolor="{width:200, height:120, position:'bottom', hash:true, padding:3, borderRadius: 2, borderColor: 'rgba(255,255,255,0.2)', backgroundColor:'rgba(255,255,255,0.1)', container:'setting-background'}">
                 </div>
                 <div class="setting" id="setting-foreground">
-                    <h3>Set custom foreground color</h3>
-                    <small>Click in the text box below and type in a color code in HEX, or use the popup controls to choose a color.</small>
+                    <h3>自定义字体颜色</h3>
+                    <small>在输入框中输入十六进制颜色代码或使用弹出的颜色选择器选择一个颜色</small>
                     <input type="text" id="set-foreground" value="#000000" class="jscolor" data-jscolor="{width:200, height:120, position:'bottom', hash:true, padding:3, borderRadius: 2, borderColor: 'rgba(255,255,255,0.2)', backgroundColor:'rgba(255,255,255,0.1)', container:'setting-foreground'}">
                 </div>
                 <div class="setting" id="setting-theme">
-                    <h3>Choose a color theme</h3>
-                    <small>Click on a circle to choose a color theme. The top color represents the background color and the bottom color represents the foreground (text) color.</small>
+                    <h3>选择一个主题</h3>
+                    <small>单击以选择现有的主题，上方颜色为背景色下方颜色为字体色</small>
                     <a href="#" class="theme" id="theme01" style="background:#FFFFFF"><span style="border-bottom-color:#000000"></span></a>
                     <a href="#" class="theme" id="theme02" style="background:#d6d6d6"><span style="border-bottom-color:#565656"></span></a>
                     <a href="#" class="theme" id="theme03" style="background:#A6AAB2"><span style="border-bottom-color:#373a3d"></span></a>
@@ -422,8 +422,8 @@
                     <div class="toggle">
                         <input id="set-link1" class="switch" type="checkbox">
                         <label for="set-link1"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                     <label for="set-link1-url">URL (Web Address, including http://)</label>
                     <input type="text" id="set-link1-url" placeholder="http://">
@@ -436,8 +436,8 @@
                     <div class="toggle">
                         <input id="set-link2" class="switch" type="checkbox">
                         <label for="set-link2"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                     <label for="set-link2-url">URL (Web Address, including http://)</label>
                     <input type="text" id="set-link2-url" placeholder="http://">
@@ -450,8 +450,8 @@
                     <div class="toggle">
                         <input id="set-link3" class="switch" type="checkbox">
                         <label for="set-link3"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                     <label for="set-link3-url">URL (Web Address, including http://)</label>
                     <input type="text" id="set-link3-url" placeholder="http://">
@@ -464,8 +464,8 @@
                     <div class="toggle">
                         <input id="set-link4" class="switch" type="checkbox">
                         <label for="set-link4"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                     <label for="set-link4-url">URL (Web Address, including http://)</label>
                     <input type="text" id="set-link4-url" placeholder="http://">
@@ -478,8 +478,8 @@
                     <div class="toggle">
                         <input id="set-link5" class="switch" type="checkbox">
                         <label for="set-link5"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                     <label for="set-link5-url">URL (Web Address, including http://)</label>
                     <input type="text" id="set-link5-url" placeholder="http://">
@@ -492,8 +492,8 @@
                     <div class="toggle">
                         <input id="set-link6" class="switch" type="checkbox">
                         <label for="set-link6"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                     <label for="set-link6-url">URL (Web Address, including http://)</label>
                     <input type="text" id="set-link6-url" placeholder="http://">
@@ -503,7 +503,8 @@
             </article>
             <!-- /////////////////////// Extra /////////////////////// -->
             <article id="settings-extra" class="settings-content">
-                <h1>Extra Settings</h1>
+                <h1>其他设置</h1>
+<!--
                 <div class="setting" id="setting-new-tab-title">
                     <h3>Tab title</h3>
                     <small>Choose what to display in the New Tab title (shows on the tab itself as well as in the browsers title).</small>
@@ -530,38 +531,42 @@
                     <label for="set-tab-custom-message">Custom New Tab Title Text</label>
                     <input type="text" id="set-tab-custom-message" placeholder="New Tab">
                 </div>
+-->
                 <div class="setting" id="setting-message">
-                    <h3>Custom Message</h3>
-                    <small>Display a personal message at the top of the page.</small>
+                    <h3>自定义消息</h3>
+                    <small>在顶部显示自定义文字</small>
                     <div class="toggle">
                         <input id="set-message" class="switch" type="checkbox">
                         <label for="set-message"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
-                    <label for="set-message-text">Message Text</label>
+                    <label for="set-message-text">文字信息</label>
                     <input type="text" id="set-message-text" placeholder="Hello World!">
                 </div>
                 <div class="setting" id="setting-brackets">
-                    <h3>Display Brackets</h3>
-                    <small>Toggle the brackets that surround the primary clock on/off.</small>
+                    <h3>显示大括号</h3>
+                    <small>设置主时钟外侧是否显示大括号</small>
                     <div class="toggle">
                         <input id="set-brackets" class="switch" type="checkbox">
                         <label for="set-brackets"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                 </div>
+<!--
                 <div class="setting" id="setting-search">
                     <h3>Display Search Box</h3>
                     <small>Toggle the display of the search box on/off.</small>
                     <div class="toggle">
                         <input id="set-search" class="switch" type="checkbox">
                         <label for="set-search"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                 </div>
+-->
+<!--
                 <div class="setting" id="setting-engine">
                     <h3>Search Engine</h3>
                     <small>Choose a search engine to use with the search box.</small>
@@ -581,16 +586,19 @@
                         <div class="radio-label">DuckDuckGo</div>
                     </div>
                 </div>
+-->
+<!--
                 <div class="setting" id="setting-animation">
                     <h3>Toggle Intro Animation</h3>
                     <small>Toggle a fade-in animation for the foreground on load.</small>
                     <div class="toggle">
                         <input id="set-animation" class="switch" type="checkbox">
                         <label for="set-animation"></label>
-                        <div class="toggle-off">OFF</div>
-                        <div class="toggle-on">ON</div>
+                        <div class="toggle-off">关</div>
+                        <div class="toggle-on">开</div>
                     </div>
                 </div>
+-->
             </article>
             <!-- /////////////////////// About /////////////////////// -->
             <article id="settings-about" class="settings-content">
